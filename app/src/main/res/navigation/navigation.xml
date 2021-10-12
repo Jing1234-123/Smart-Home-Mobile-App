@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.iot_asgm.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_thermostatFragment"
+            app:destination="@id/thermostatFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_lightFragment2"
+            app:destination="@id/lightFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_doorFragment"
+            app:destination="@id/doorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_curtainFragment"
+            app:destination="@id/curtainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thermostatFragment"
+        android:name="com.example.iot_asgm.ThermostatFragment"
+        android:label="fragment_smart_thermostat"
+        tools:layout="@layout/fragment_thermostat" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.iot_asgm.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/lightFragment"
+        android:name="com.example.iot_asgm.LightFragment"
+        android:label="fragment_light"
+        tools:layout="@layout/fragment_light" />
+    <fragment
+        android:id="@+id/doorFragment"
+        android:name="com.example.iot_asgm.DoorFragment"
+        android:label="fragment_door"
+        tools:layout="@layout/fragment_door" />
+    <fragment
+        android:id="@+id/curtainFragment"
+        android:name="com.example.iot_asgm.CurtainFragment"
+        android:label="fragment_curtain"
+        tools:layout="@layout/fragment_curtain" >
+        <action
+            android:id="@+id/action_curtainFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.example.iot_asgm.AlarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
+</navigation>

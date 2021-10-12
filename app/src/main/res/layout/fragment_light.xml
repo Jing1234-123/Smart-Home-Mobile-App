@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LightFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top">
+
+        <ImageView
+            android:id="@+id/bulb"
+            android:layout_width="181dp"
+            android:layout_height="172dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="84dp"
+            android:src="@drawable/off_bulb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cur_light_intensity"
+            android:layout_width="190dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@id/bulb"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="-85dp"
+            android:layout_marginStart="50dp"
+            android:text="@string/light_inten"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/smart_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cur_light_intensity"
+            android:layout_marginBottom="-107dp"
+            android:src="@drawable/smart_mode" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/smart_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/smart_mode"
+            android:layout_alignEnd="@+id/smart_mode"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="35dp"
+            android:scaleX="1.5"
+            android:scaleY="1.4"/>
+
+        <ImageView
+            android:id="@+id/manual_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/smart_mode"
+            android:layout_marginBottom="-103dp"
+            android:src="@drawable/manual_mode" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/manual_mode_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/manual_mode"
+            android:layout_alignEnd="@+id/manual_mode"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="35dp"
+            android:scaleX="1.5"
+            android:scaleY="1.4"/>
+
+    </RelativeLayout>
+</layout>

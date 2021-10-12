@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IOT-asgm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_smart_thermostat">SmartThermostat</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="thermostat">Smart Thermostat</string>
+    <string name="light">Smart Light</string>
+    <string name="door">Smart Door</string>
+    <string name="curtain">Smart Curtain</string>
+
+    <string name="air_cons_temp">%1$d°C</string>
+    <string name="target_temp">25</string>
+    <string name="air_cons_cur_temp">%1$.1f°C</string>
+    <string name="cur_humi">%1$.0f%%</string>
+    <string name="title_activity_report">Report</string>
+
+    <string name="light_inten">Current Light Intensity: %1$.1f</string>
+
+    <string name="ultrasonic">Ultrasonic Sensor Value: %1$.2fm</string>
+    <string name="cap_img">%1$s</string>
+
+    <string name="threshold_temp">Threshold Temperature: %1$.0f°C</string>
+    <string name="time">Time: %1$s</string>
+    <string name="status">Status: %1$s</string>
+    <string name="cur_temp">Current Temperature: %1$.1f°C</string>
+
+
+    <string name="avg_temp">%1$.1f°C</string>
+    <string name="avg_humi">%1$.0f%%</string>
+    <string name="cur_hour">Hour: %1$s</string>
+</resources>

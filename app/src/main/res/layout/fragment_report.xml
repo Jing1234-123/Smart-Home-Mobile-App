@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFragment">
+
+    <TextView
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hour: "
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/avg_temp"
+        android:layout_below="@id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="29°C"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        />
+
+
+    <TextView
+        android:id="@+id/avg"
+        android:layout_below="@id/avg_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average\nTemperature"
+        android:layout_marginLeft="60dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/avg_humi"
+        android:layout_alignStart="@id/avg_temp"
+        android:layout_below="@id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80%"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        />
+
+
+    <TextView
+        android:id="@+id/avg_humi_text"
+        android:layout_below="@id/avg_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average\nHumidity"
+        android:layout_marginLeft="260dp"
+        android:textSize="14sp"
+        />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/avg">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.4"
+            android:scaleY="0.4" />
+
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+</RelativeLayout>

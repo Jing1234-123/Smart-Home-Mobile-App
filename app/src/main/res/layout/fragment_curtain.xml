@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CurtainFragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/auto_curtain"
+            android:layout_width="wrap_content"
+            android:layout_height="175dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/auto_curtain"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/auto_curtain_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/auto_curtain"
+            android:layout_alignEnd="@id/auto_curtain"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:scaleY="1.3"
+            android:scaleX="1.4" />
+
+
+        <TextView
+            android:id="@+id/cur_temp"
+            android:layout_width="248dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@id/auto_curtain"
+            android:layout_alignTop="@id/auto_curtain"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="55dp"
+            android:text="Current Temperature: 25°C"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/thres_temp"
+            android:layout_width="281dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@id/auto_curtain"
+            android:layout_alignTop="@id/cur_temp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="35dp"
+            android:text="Threshold Temperature: 28°C"
+            android:textSize="18sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/thres_temp"
+            android:layout_marginTop="25dp"
+            android:scrollbarSize="10dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:trackColor="@color/teal_200"
+            app:tickColor="@color/teal_200"
+            android:valueFrom="20"
+            android:valueTo="35"
+            android:stepSize="1" />
+
+        <ImageView
+            android:id="@+id/remote_control"
+            android:layout_width="wrap_content"
+            android:layout_height="148dp"
+            android:layout_below="@id/auto_curtain"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/remote_curtain"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="87dp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/remote_cur_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/remote_control"
+            android:layout_alignEnd="@id/remote_control"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:scaleX="1.4"
+            android:scaleY="1.3" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="281dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@id/remote_control"
+            android:layout_alignTop="@id/remote_control"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/status"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/alamr_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alarm_layout"
+            android:layout_below="@+id/remote_control"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:id="@+id/alarm"
+            android:layout_width="281dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@id/alamr_layout"
+            android:layout_alignStart="@id/alamr_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="ALARM"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/alarm_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/alamr_layout"
+            android:layout_alignEnd="@id/alamr_layout"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:scaleX="1.4"
+            android:scaleY="1.3" />
+
+        <TextView
+            android:id="@+id/alarm_time"
+            android:layout_width="281dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/alarm"
+            android:layout_alignStart="@id/alamr_layout"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Time: 0700"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/set_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alarm_time"
+            android:layout_alignStart="@id/alamr_layout"
+            android:layout_marginStart="20dp"
+            android:text="Set Alarm" />
+
+        <TextView
+            android:id="@+id/set_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_alarm"
+            android:text="Select Time"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="80dp"
+            android:visibility="invisible"/>
+
+       <LinearLayout
+           android:id="@+id/linear"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/set_time"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_marginTop="20dp"
+           android:layout_marginStart="50dp">
+
+           <NumberPicker
+               android:id="@+id/alarm_picker_hour"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:visibility="invisible"/>
+
+           <NumberPicker
+               android:id="@+id/alarm_picker_min"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:visibility="invisible"/>
+
+           <Button
+               android:id="@+id/confirm"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Confirm"
+               android:layout_margin="30dp"
+               android:visibility="invisible"
+               android:enabled="false"/>
+       </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

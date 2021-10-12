@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/thermostatFragment"
+        android:title="@string/thermostat" />
+
+    <item
+        android:id="@+id/lightFragment"
+        android:title="@string/light" />
+
+    <item
+        android:id="@+id/doorFragment"
+        android:title="@string/door" />
+
+    <item
+        android:id="@+id/curtainFragment"
+        android:title="@string/curtain" />
+
+    <item
+        android:id="@+id/reportFragment"
+        android:title="Report" />
+</menu>

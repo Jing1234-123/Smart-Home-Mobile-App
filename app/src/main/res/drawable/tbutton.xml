@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:enterFadeDuration="@integer/config_navAnimTime"
+    android:exitFadeDuration="@integer/config_navAnimTime">
+    <item android:drawable="@drawable/onbtn" android:state_checked="true"/>
+    <item android:drawable="@drawable/offbtn" android:state_checked="false"/>
+
+</selector>
